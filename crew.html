@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Space Tourism</title>
+  </head>
+  <body class="crew_body">
+    <!-- header -->
+    <header class="header">
+      <hr class="header_decoration" />
+      <a href="index.html" class="logo_holder">
+        <img src="assets/icons/logo.svg" alt="logo" />
+      </a>
+      <nav class="header_nav">
+        <img
+          src="assets/icons/burger_menu_icon.svg"
+          alt="menu"
+          id="burger_menu"
+          class="burger_menu"
+        />
+        <div class="header_nav_items" id="header_nav_items">
+          <img
+            src="assets/icons/close_X_icon.svg"
+            alt="close"
+            class="close_nav"
+            id="close_nav"
+          />
+          <ul class="header_nav_list">
+            <li>
+              <a href="index.html"
+                ><span class="nav_item_order">00</span
+                ><span class="nav_item_text">HOME</span></a
+              >
+            </li>
+            <li>
+              <a href="destinations.html"
+                ><span class="nav_item_order">01</span
+                ><span class="nav_item_text">DESTINATION</span></a
+              >
+            </li>
+            <li>
+              <a href="crew.html" class="active"
+                ><span class="nav_item_order">02</span
+                ><span class="nav_item_text">CREW</span></a
+              >
+            </li>
+            <li>
+              <a href="technology.html"
+                ><span class="nav_item_order">03</span
+                ><span class="nav_item_text">TECHNOLOGY</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- content -->
+    <main class="crew_content content">
+      <div class="content_header">
+        <h4 class="content_subtitle">
+          <span class="crew_order"> 02 </span>
+          meet your crew
+        </h4>
+        <div class="crew_img_holder" id="crew_img_holder"></div>
+        <hr class="crew_hr destinations_hr" />
+      </div>
+      <div class="content_body" id="content_body">
+        <ul class="crew_slider_nav" id="crew_slider_nav"></ul>
+        <h3 class="crew_role" id="crew_role"></h3>
+        <h1 class="content_title title-1 crew_title" id="crew_title"></h1>
+        <p class="content_text crew_text" id="crew_text"></p>
+      </div>
+    </main>
+    <!-- scripts -->
+    <script type="module" src="scripts/menu.js"></script>
+    <script type="module" src="scripts/api.js"></script>
+    <script type="module" src="scripts/crew.js"></script>
+  </body>
+</html>
