@@ -15,6 +15,7 @@
   <body>
     <!-- header -->
     <header class="header">
+      <hr class="header_decoration" />
       <a href="#" class="logo_holder">
         <img src="assets/logo.svg" alt="logo" />
       </a>
@@ -34,13 +35,13 @@
           />
           <ul class="header_nav_list">
             <li>
-              <a href="#"
+              <a href="index.html" class="active"
                 ><span class="nav_item_order">00</span
                 ><span class="nav_item_text">HOME</span></a
               >
             </li>
             <li>
-              <a href="#"
+              <a href="destinations.html"
                 ><span class="nav_item_order">01</span
                 ><span class="nav_item_text">DESTINATION</span></a
               >
@@ -63,15 +64,21 @@
     </header>
     <!-- content -->
     <main class="content">
-      <h5 class="content_subtitle">so, you want to travel to</h5>
-      <h1 class="content_title title-1">space</h1>
-      <p class="content_text">
-        Let’s face it; if you want to go to space, you might as well genuinely
-        go to outer space and not hover kind of on the edge of it. Well sit
-        back, and relax because we’ll give you a truly out of this world
-        experience!
-      </p>
-      <button class="content_explore_btn">explore</button>
+      <div class="content_header">
+        <h4 class="content_subtitle">so, you want to travel to</h5>
+        <h1 class="content_title title-1">space</h1>
+        <p class="content_text">
+          Let’s face it; if you want to go to space, you might as well genuinely
+          go to outer space and not hover kind of on the edge of it. Well sit
+          back, and relax because we’ll give you a truly out of this world
+          experience!
+        </p>
+      </div>
+      <div class="content_footer">
+        <button class="content_explore_btn">
+          <a href="destinations.html">explore</a>
+        </button>
+      </div>
     </main>
     <script src="script.js"></script>
   </body>
