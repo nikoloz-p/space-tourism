@@ -33,6 +33,15 @@ async function crewSlider() {
     showCrewMember(0);
 }
 
+function getCrewImg(images) {
+    const windowWidth = window.innerWidth;
+    if (windowWidth <= 480) {
+        return images.webp;
+    } else {
+        return images.png;
+    }
+}
+
 async function showCrewMember(index) {
     const data = await loadApiData();
     const currentCrew = data.crew[index];
@@ -42,7 +51,8 @@ async function showCrewMember(index) {
     const crewText = document.getElementById('crew_text')
 
     // get images
-    crewImgs.innerHTML = `<img src="${currentCrew.images.webp}" alt="">`;
+    const imgSrc = getCrewImg(currentCrew.images);
+    crewImgs.innerHTML = `<img src="${imgSrc}" alt="">`;
 
     // animate
     const img = crewImgs.querySelector('img');

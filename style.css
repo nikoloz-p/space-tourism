@@ -216,7 +216,7 @@ body {
 
 .content_img_holder img {
   opacity: 0;
-  transition: opacity 0.4s ease;
+  transition: opacity 1s ease;
   width: 100%;
   height: 100%;
 }
@@ -302,12 +302,13 @@ body {
 .crew_img_holder {
   margin: 32px auto 0;
   max-width: 327px;
-  height: 226px;
+  height: 222px;
 }
 
 .crew_img_holder img {
   opacity: 0;
-  transition: opacity 0.4s ease;
+  transition: opacity 1s ease;
+  height: 100%;
 }
 
 .crew_img_holder img.animated {
@@ -475,6 +476,55 @@ body {
   .destinations_travel_holder {
     margin-top: 0;
   }
+
+  /* crew */
+  .crew_body {
+    background: url("assets/crew/crew_bg_image_desktop.svg") no-repeat center
+      bottom / cover;
+  }
+  .crew_header {
+    margin-bottom: 40px;
+  }
+  .crew_content {
+    padding: 0 38px;
+  }
+  .crew_content_body {
+    display: flex;
+    flex-direction: column;
+  }
+  .crew_desc {
+    display: flex;
+    flex-direction: column;
+  }
+  .crew_img_holder {
+    order: 4;
+    max-width: 450px;
+    height: 572px;
+  }
+
+  .content_subtitle {
+    text-align: left;
+  }
+
+  .crew_slider_nav {
+    order: 2;
+  }
+
+  .crew_title {
+    font-size: 40px;
+    line-height: 100%;
+  }
+  .crew_role {
+    font-size: 24px;
+  }
+  .crew_text {
+    max-width: 450px;
+    margin: 16px auto 0;
+    line-height: 28px;
+  }
+  .crew_hr {
+    display: none;
+  }
 }
 /* desktop */
 @media (min-width: 1440px) {
@@ -551,6 +601,7 @@ body {
   /* content */
   .destinations_content {
     margin-top: 78px;
+    padding-bottom: 112px !important;
   }
   .content_img_holder {
     width: 445px;
@@ -571,5 +622,51 @@ body {
     justify-content: left;
     text-align: left;
     gap: 80px;
+  }
+  /* crew */
+  .crew_body {
+    position: relative;
+
+    background: url("assets/crew/crew_bg_image_desktop.svg") no-repeat center
+      bottom / cover;
+  }
+  .crew_content {
+    display: block;
+    margin-top: 76px;
+
+    padding: 0 165px 0 135px !important;
+  }
+
+  .crew_content .content_subtitle {
+    margin-bottom: 154px;
+    font-size: 28px;
+    letter-spacing: 4.72px;
+  }
+
+  .crew_role {
+    font-size: 32px;
+  }
+  .crew_title {
+    font-size: 56px;
+  }
+
+  .crew_content_body {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .crew_img_holder {
+    margin-left: 80px;
+    margin-right: 0;
+    position: absolute;
+    bottom: 0;
+    right: 165px;
+  }
+
+  .crew_slider_nav {
+    margin-left: 0;
+  }
+  .crew_text {
+    margin: 0;
+    max-width: 444px;
   }
 }
