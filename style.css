@@ -729,6 +729,11 @@ body {
     margin-top: 78px;
     padding-bottom: 112px !important;
   }
+
+  .destinations_content .content_subtitle {
+    font-size: 28px;
+  }
+
   .content_img_holder {
     width: 445px;
     height: 445px;
